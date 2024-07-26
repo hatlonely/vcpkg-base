@@ -10,7 +10,7 @@ vcpkg_from_git(
 message(STATUS "source path is ${SOURCE_PATH}, current packages dir is ${CURRENT_PACKAGES_DIR}")
 
 vcpkg_execute_build_process(
-    COMMAND make -j4
+    COMMAND make
     WORKING_DIRECTORY ${SOURCE_PATH}
     LOGNAME "build_polaris")
 
